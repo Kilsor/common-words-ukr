@@ -4,7 +4,7 @@
 
 `image`, `img`, `picture`, `pic` - картинка
 
-icon - іконка
+`icon` - іконка
 
 `logo` - логотип
 
@@ -34,7 +34,7 @@ icon - іконка
 
 `link` - посилання
 
-copyright, copy — копірайт
+`copyright`, `copy` — копірайт
 
 ## Списки
 
@@ -56,7 +56,7 @@ copyright, copy — копірайт
 
 `content` - вміст елемента
 
-sidebar - бічна колонка (сторінки або елемента)
+`sidebar` - бічна колонка (сторінки або елемента)
 
 `aside` - блок з додатковою інформацією
 
@@ -116,7 +116,7 @@ sidebar - бічна колонка (сторінки або елемента)
 
 `search` — пошук
 
-'socials' - блок іконок соцмереж
+`socials` - блок іконок соцмереж
 
 `advertisement`, `adv`, `commercial`, `promo` - рекламний блок (ріжуться Адблоком, не рекомендується використовувати такі класи для блоків з внутрішньою рекламою)
 
@@ -124,7 +124,7 @@ sidebar - бічна колонка (сторінки або елемента)
 
 `slider`, `carousel` - слайдер, інтерактивний елемент з прокручуванням вмісту
 
-pagination - посторінкова навігація
+`pagination` - посторінкова навігація
 
 `user`, `author` - користувач, автор запису або коментаря
 
@@ -132,7 +132,7 @@ pagination - посторінкова навігація
 
 `cart`, `basket` - кошик
 
-breadcrumbs - навігаційний ланцюжок, «хлібні крихти»
+`breadcrumbs` - навігаційний ланцюжок, «хлібні крихти»
 
 `more`, `all` - посилання на повну інформацію
 
@@ -156,7 +156,7 @@ breadcrumbs - навігаційний ланцюжок, «хлібні крих
 
 `error` - статус помилки
 
-warning - статус попередження
+`warning` - статус попередження
 
 `success` - статус успішного виконання завдання
 
@@ -166,212 +166,208 @@ warning - статус попередження
 
 ### Простий список
 
-``html
-
+```html
 <ul class="list">
-   <li class="item">Перше</li>
-   <li class="item">Друге</li>
-   <li class="item">Третє</li>
+  <li class="item">Перше</li>
+  <li class="item">Друге</li>
+  <li class="item">Третє</li>
 </ul>
-````
+```
 
 ### Картинка користувача (юзерпік)
 
-``html
-
+```html
 <div class="user">
-   <img class="user__img" src="userpic.png" alt="Дормідонт Петрович">
-   <a class="user__link" href="#">Дормідонт Петрович</a>
+  <img class="user__img" src="userpic.png" alt="Дормідонт Петрович" />
+  <a class="user__link" href="#">Дормідонт Петрович</a>
 </div>
-````
+```
 
 ### Галерея
 
-``html
-
+```html
 <div class="gallery">
-   <ul class="gallery__list">
-     <li class="gallery__item">
-       <img class="gallery__img" src="flowers.jpg" alt="Цвітемо як останній раз">
-     </li>
-     <li class="gallery__item">
-       <img class="gallery__img" src="trees.jpg" alt="Парк «Три сосни»">
-     </li>
-   </ul>
+  <ul class="gallery__list">
+    <li class="gallery__item">
+      <img
+        class="gallery__img"
+        src="flowers.jpg"
+        alt="Цвітемо як останній раз"
+      />
+    </li>
+    <li class="gallery__item">
+      <img class="gallery__img" src="trees.jpg" alt="Парк «Три сосни»" />
+    </li>
+  </ul>
 </div>
-````
+```
 
 ### Навігація
 
-``html
-
+```html
 <nav class="nav">
-   <a class="nav__link nav__link--active">Головна</a>
-   <a class="nav__link" href="#">Другорядна</a>
-   <a class="nav__link" href="#">Третя з кінця</a>
-   <a class="nav__link" href="#">Предостання</a>
-   <a class="nav__link" href="#">Зовсім кінець</a>
+  <a class="nav__link nav__link--active">Головна</a>
+  <a class="nav__link" href="#">Другорядна</a>
+  <a class="nav__link" href="#">Третя з кінця</a>
+  <a class="nav__link" href="#">Предостання</a>
+  <a class="nav__link" href="#">Зовсім кінець</a>
 </nav>
-````
+```
 
-``html
-
+```html
 <nav class="nav">
-   <ul class="nav__list">
-     <li class="nav__item nav__item--current">
-       <a class="nav__link">Головна</a>
-     </li>
-     <li class="nav__item">
-       <a class="nav__link" href="#">Статті</a>
-     </li>
-     <li class="nav__item">
-       <a class="nav__link" href="#">Фотогалерея</a>
-     </li>
-     <li class="nav__item">
-       <a class="nav__link" href="#">Контакти</a>
-     </li>
-   </ul>
+  <ul class="nav__list">
+    <li class="nav__item nav__item--current">
+      <a class="nav__link">Головна</a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" href="#">Статті</a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" href="#">Фотогалерея</a>
+    </li>
+    <li class="nav__item">
+      <a class="nav__link" href="#">Контакти</a>
+    </li>
+  </ul>
 </nav>
-````
+```
 
 ### Віджет у бічній колонці
 
-``html
-
+```html
 <div class="widget">
-   <h4 class="widget__title">Вирощуємо желе</h4>
-<div class="widget__content">
-     <p>Щоб виростити товариське доброзичливе желе,
-     нам знадобиться рулон поролону, два кілограми цукру,
-     три яйця та пів чайної чашки ацетону.</p>
+  <h4 class="widget__title">Вирощуємо желе</h4>
+  <div class="widget__content">
+    <p>
+      Щоб виростити товариське доброзичливе желе, нам знадобиться рулон
+      поролону, два кілограми цукру, три яйця та пів чайної чашки ацетону.
+    </p>
 
-     <a class="widget__link" href="#">Не читати далі...</a>
-
-   </div>
+    <a class="widget__link" href="#">Не читати далі...</a>
+  </div>
 </div>
-````
+```
 
 ### Блок новин
 
-``html
-
+```html
 <div class="news">
-     <h3 class="news__title">Учорашні новини</h3>
+  <h3 class="news__title">Учорашні новини</h3>
 
-     <ul class="news__list">
-         <!-- до класу елемента додаємо клас блоку,
+  <ul class="news__list">
+    <!-- до класу елемента додаємо клас блоку,
               щоб створити новий простір імен -->
-         <li class="news__item item-news">
-             <h4 class="item-news__title">Змагання серед обли з ковзанярського спорту</h4>
-             <div class="item-news__text">
-               <p>Перемогла команда кілок із Петрозаводська</p>
+    <li class="news__item item-news">
+      <h4 class="item-news__title">
+        Змагання серед обли з ковзанярського спорту
+      </h4>
+      <div class="item-news__text">
+        <p>Перемогла команда кілок із Петрозаводська</p>
 
-               <a href="#" class="item-news__link">Читати далі</a>
-             </div>
-         </li>
+        <a href="#" class="item-news__link">Читати далі</a>
+      </div>
+    </li>
 
-         <li class="news__item item-news">
-             <h4 class="item-news__title">Науковці уточнили роль напилка у догляді за нігтями</h4>
-             <div class="item-news__text">
-               <p>Британські вчені високо оцінили внесок
-                 напильника у відрощуванні півтораметрових нігтів.</p>
+    <li class="news__item item-news">
+      <h4 class="item-news__title">
+        Науковці уточнили роль напилка у догляді за нігтями
+      </h4>
+      <div class="item-news__text">
+        <p>
+          Британські вчені високо оцінили внесок напильника у відрощуванні
+          півтораметрових нігтів.
+        </p>
 
-               <a href="#" class="item-news__link">Не читати далі</a>
-             </div>
-         </li>
-     </ul>
-
+        <a href="#" class="item-news__link">Не читати далі</a>
+      </div>
+    </li>
+  </ul>
 </div>
-````
+```
 
 ### Стаття або пост у блозі (простий варіант)
 
-``html
-
+```html
 <article class="article">
-   <h3 class="article__title">Намацуємо чакри біля пучка петрушки</h3>
-   <time class="article__datetime">32 травня, 10:87</time>
+  <h3 class="article__title">Намацуємо чакри біля пучка петрушки</h3>
+  <time class="article__datetime">32 травня, 10:87</time>
 
-   <div class="article__author author-article">
-     <img class="author-article__img" src="userpic.png" alt="Клішня Андріївна">
-     <a class="author-article__link" href="#">Клішня Андріївна Долгорука</a>
-     <div class="author-article__desc">Наш експерт з чакрів</div>
-   </div>
+  <div class="article__author author-article">
+    <img class="author-article__img" src="userpic.png" alt="Клішня Андріївна" />
+    <a class="author-article__link" href="#">Клішня Андріївна Долгорука</a>
+    <div class="author-article__desc">Наш експерт з чакрів</div>
+  </div>
 
-   <div class="article__content">
-     Сходіть на ринок і купіть у стареньких пучок петрушки грам на 100.
-     Як слід переберіть, очистіть від жуків та гусениць. Жуків віддайте погратися
-     коту, гусениць поселіть у горщик з кактусами, нехай одна буде Джоном,
-     друга Біллі, а у вас у горщику тепер буде Дикий Захід. Поверніться
-     до пучка петрушки. Ласкаво погляньте на нього і добре почухайте
-     за вухом, можна собі чи коту. Перев'яжіть атласною стрічкою,
-     Обов'язково зав'яжіть бант. Вітаємо! Тепер у вас є повністю
-     одомашнений пучок петрушки, який буде весело бігати за вами
-     по п'ятах і пророщувати своє насіння у ваших капцях.
-   </div>
+  <div class="article__content">
+    Сходіть на ринок і купіть у стареньких пучок петрушки грам на 100. Як слід
+    переберіть, очистіть від жуків та гусениць. Жуків віддайте погратися коту,
+    гусениць поселіть у горщик з кактусами, нехай одна буде Джоном, друга Біллі,
+    а у вас у горщику тепер буде Дикий Захід. Поверніться до пучка петрушки.
+    Ласкаво погляньте на нього і добре почухайте за вухом, можна собі чи коту.
+    Перев'яжіть атласною стрічкою, Обов'язково зав'яжіть бант. Вітаємо! Тепер у
+    вас є повністю одомашнений пучок петрушки, який буде весело бігати за вами
+    по п'ятах і пророщувати своє насіння у ваших капцях.
+  </div>
 </article>
-````
+```
 
 ### Стаття або пост у блозі (складний варіант)
 
-``html
-
+```html
 <article class="entry">
-   <header class="entry__header">
-     <h3 class="entry__title title-entry">
-       <a class="title-entry__link" href="#">Гумові качечки як спосіб самопізнання</a>
-     </h3>
+  <header class="entry__header">
+    <h3 class="entry__title title-entry">
+      <a class="title-entry__link" href="#"
+        >Гумові качечки як спосіб самопізнання</a
+      >
+    </h3>
 
-     <time class="entry__datetime">32 травня, 10:87</time>
+    <time class="entry__datetime">32 травня, 10:87</time>
+  </header>
 
-   </header>
+  <div class="entry__author author-entry">
+    <img class="author-entry__img" src="userpic.png" alt="Василіс Сергійович" />
 
-   <div class="entry__author author-entry">
-     <img class="author-entry__img" src="userpic.png" alt="Василіс Сергійович">
+    <a class="author-entry__link" href="#">Василіса Сергійович</a>
+  </div>
 
-     <a class="author-entry__link" href="#">Василіса Сергійович</a>
+  <div class="entry__content">
+    Дістаньте з горища коробку з півсотнею гумових качечок, решти після
+    святкування нового року. З качечок і свічок викладіть пентаграму на підлозі
+    кімнати. Сядьте посередині у позу лотоса, в кожну руку візьміть за
+    німецько-бразильським словником, прокашляйтесь, наберіть повні груди повітря
+    і голосно і впевнено, з повною самовіддачею скажіть "Кря!"
+  </div>
 
-   </div>
+  <div class="entry__tags tags-entry">
+    <h4 class="tags-entry__title">Мітки</h4>
 
-   <div class="entry__content">
-     Дістаньте з горища коробку з півсотнею гумових качечок,
-     решти після святкування нового року. З качечок
-     і свічок викладіть пентаграму на підлозі кімнати.
-     Сядьте посередині у позу лотоса, в кожну руку візьміть
-     за німецько-бразильським словником, прокашляйтесь, наберіть
-     повні груди повітря і голосно і впевнено,
-     з повною самовіддачею скажіть "Кря!"
-   </div>
+    <ul class="tags-entry__list">
+      <li class="tags-entry__item">
+        <a class="tags-entry__link" href="#">хоровод своїми руками</a>
+      </li>
+      <li class="tags-entry__item">
+        <a class="tags-entry__link" href="#">порцелянові капці</a>
+      </li>
+      <li class="tags-entry__item">
+        <a class="tags-entry__link" href="#">гуталін у кулінарії</a>
+      </li>
+    </ul>
+  </div>
 
-   <div class="entry__tags tags-entry">
-     <h4 class="tags-entry__title">Мітки</h4>
-
-     <ul class="tags-entry__list">
-       <li class="tags-entry__item">
-         <a class="tags-entry__link" href="#">хоровод своїми руками</a>
-       </li>
-       <li class="tags-entry__item">
-         <a class="tags-entry__link" href="#">порцелянові капці</a>
-       </li>
-       <li class="tags-entry__item">
-         <a class="tags-entry__link" href="#">гуталін у кулінарії</a>
-       </li>
-     </ul>
-
-   </div>
-
-   <div class="entry__actions actions-entry">
-     <ul class="actions-entry__list">
-       <li class="actions-entry__item actions-entry__item--read">
-         <a class="actions-entry__link" href="#">238 відповідей</a>
-       </li>
-       <li class="actions-entry__item actions-entry__item--write">
-         <a class="actions-entry__link" href="#">Написати в спортлото</a>
-       </li>
-       <li class="actions-entry__item actions-entry__item--share">
-         <a class="actions-entry__link" href="#">Поділитись</a>
-       </li>
-     </ul>
-   </div>
+  <div class="entry__actions actions-entry">
+    <ul class="actions-entry__list">
+      <li class="actions-entry__item actions-entry__item--read">
+        <a class="actions-entry__link" href="#">238 відповідей</a>
+      </li>
+      <li class="actions-entry__item actions-entry__item--write">
+        <a class="actions-entry__link" href="#">Написати в спортлото</a>
+      </li>
+      <li class="actions-entry__item actions-entry__item--share">
+        <a class="actions-entry__link" href="#">Поділитись</a>
+      </li>
+    </ul>
+  </div>
 </article>
-````
+```
